@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nos talents</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Poppins', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+  <style>
+    .bg-section {
+      background: linear-gradient(180deg, #ede9fe 0%, #f5f3ff 8%, #ffffff 30%, #ffffff 70%, #e8e4f8 100%);
+    }
+    .avatar-ring {
+      border-radius: 50%;
+      background: #e5e7eb;
+      overflow: hidden;
+      width: 140px;
+      height: 140px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .avatar-ring img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      filter: grayscale(100%);
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 2px 16px 0 rgba(120,80,200,0.07);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 24px 16px 20px;
+      flex: 1;
+      min-width: 0;
+    }
+    .btn-recruter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: 2px solid #7C3AED;
+      border-radius: 999px;
+      color: #2D1470;
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 10px 28px;
+      background: white;
+      cursor: pointer;
+      width: 100%;
+      margin-top: auto;
+      transition: background 0.15s, color 0.15s;
+    }
+    .btn-recruter:hover {
+      background: #f5f3ff;
+    }
+  </style>
+</head>
+<body class="font-sans bg-section min-h-screen">
+
+<section class="py-16 px-4 max-w-7xl mx-auto">
+
+  <!-- Title -->
+  <h2 class="text-4xl md:text-5xl font-extrabold text-[#2D1470] text-center leading-tight mb-12">
+    Nos talents qui vont transformer<br/>vos concepts en solutions
+  </h2>
+
+  <!-- Cards -->
+  <div class="flex flex-col sm:flex-row gap-5 items-stretch justify-center">
+
+    <!-- Card 1: Ryan -->
+    <div class="card">
+      <div class="avatar-ring mb-4">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ryan ANDRIAMAHERY"/>
+      </div>
+      <p class="text-[#7C3AED] text-xs underline mb-1">4 ans xp</p>
+      <h3 class="font-extrabold text-[#2D1470] text-base leading-tight mb-3">Ryan ANDRIAMAHERY</h3>
+      <div class="flex flex-col gap-1 mb-4 w-full">
+        <p class="text-gray-700 text-sm font-semibold">Lead Developer Backend</p>
+        <p class="text-gray-400 text-xs">Java, SpringBoot, Postgresql</p>
+        <p class="text-gray-400 text-xs">Développeur Backend<br/>Expert en JAVA</p>
+      </div>
+      <button class="btn-recruter">
+        Recruter
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2D1470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      </button>
+    </div>
+
+    <!-- Card 2: Lou -->
+    <div class="card">
+      <div class="avatar-ring mb-4">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Lou Maurica"/>
+      </div>
+      <p class="text-[#7C3AED] text-xs underline mb-1">10 ans xp</p>
+      <h3 class="font-extrabold text-[#2D1470] text-base leading-tight mb-3">Lou Maurica</h3>
+      <div class="flex flex-col gap-1 mb-4 w-full">
+        <p class="text-gray-700 text-sm font-semibold">Lead Developer Backend</p>
+        <p class="text-gray-400 text-xs">Java, SpringBoot, Postgresql</p>
+        <p class="text-gray-400 text-xs">Expert en JAVA, Cloud &amp; IA</p>
+      </div>
+      <button class="btn-recruter">
+        Recruter
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2D1470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      </button>
+    </div>
+
+    <!-- Card 3: Yannick -->
+    <div class="card">
+      <div class="avatar-ring mb-4">
+        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Yannick RAHARIJAONA"/>
+      </div>
+      <p class="text-[#7C3AED] text-xs underline mb-1">6 ans xp</p>
+      <h3 class="font-extrabold text-[#2D1470] text-base leading-tight mb-3">Yannick RAHARIJAONA</h3>
+      <div class="flex flex-col gap-1 mb-4 w-full">
+        <p class="text-gray-700 text-sm font-semibold">Cloud &amp; IA Director</p>
+        <p class="text-gray-400 text-xs">Java, Python, Postgresql</p>
+        <p class="text-gray-400 text-xs">Intelligence Artificielle, Machine<br/>Learning, Cloud computing</p>
+      </div>
+      <button class="btn-recruter">
+        Recruter
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2D1470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      </button>
+    </div>
+
+    <!-- Card 4: Ny Anjaratiana -->
+    <div class="card">
+      <div class="avatar-ring mb-4">
+        <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="Ny Anjaratiana RAZAFINTSIALONINA"/>
+      </div>
+      <p class="text-[#7C3AED] text-xs underline mb-1">2 ans xp</p>
+      <h3 class="font-extrabold text-[#2D1470] text-base leading-tight mb-3">Ny Anjaratiana<br/>RAZAFINTSIALONINA</h3>
+      <div class="flex flex-col gap-1 mb-4 w-full">
+        <p class="text-gray-700 text-sm font-semibold">Consultant Back-end</p>
+        <p class="text-gray-400 text-xs">Java, SpringBoot, Postgresql</p>
+        <p class="text-gray-400 text-xs">Développeur JAVA, Spring Boot</p>
+      </div>
+      <button class="btn-recruter">
+        Recruter
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2D1470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      </button>
+    </div>
+
+    <!-- Card 5: Amour -->
+    <div class="card">
+      <div class="avatar-ring mb-4">
+        <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Amour RAMANANTSIRESY"/>
+      </div>
+      <p class="text-[#7C3AED] text-xs underline mb-1">2 ans xp</p>
+      <h3 class="font-extrabold text-[#2D1470] text-base leading-tight mb-3">Amour<br/>RAMANANTSIRESY</h3>
+      <div class="flex flex-col gap-1 mb-4 w-full">
+        <p class="text-gray-700 text-sm font-semibold">Consultant Front-end</p>
+        <p class="text-gray-400 text-xs">React, Typescript, Node JS</p>
+        <p class="text-gray-400 text-xs">Développeur Web, React, Typescript</p>
+      </div>
+      <button class="btn-recruter">
+        Recruter
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2D1470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

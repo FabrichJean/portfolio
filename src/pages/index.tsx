@@ -1,5 +1,6 @@
 import Header from "../components/header"
 import Service from "../components/service"
+import Team from "../components/team"
 
 const PrincipalPage = () => {
   return (
@@ -8,6 +9,8 @@ const PrincipalPage = () => {
       <Header />
 
       <Service/>
+
+      <Team/>
     </div>
   )
 }
