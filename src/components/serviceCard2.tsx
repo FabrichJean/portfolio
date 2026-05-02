@@ -33,15 +33,15 @@ export default function ServiceCard({
       aria-pressed={selected}
     >
       {/* Reflet supérieur liquide */}
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
-      <div className="absolute inset-x-8 top-0 h-24 bg-gradient-to-b from-white/10 to-transparent rounded-full blur-2xl opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
+  <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-white/40 to-transparent" />
+  <div className="absolute inset-x-8 top-0 h-24 bg-linear-to-b from-white/10 to-transparent rounded-full blur-2xl opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
       
       {/* Contenu */}
       <div className="relative flex flex-col items-center text-center px-8 pt-10 pb-6 z-10">
         {/* Icône avec halo */}
         <div className={`
           relative mb-6 p-4 rounded-2xl
-          bg-gradient-to-br from-purple-500/10 to-transparent
+          bg-linear-to-br from-purple-500/10 to-transparent
           border border-purple-400/10
           transition-transform duration-500 group-hover:scale-110
           ${selected ? 'from-purple-500/20 border-purple-400/20' : ''}
@@ -55,12 +55,12 @@ export default function ServiceCard({
 
         {/* Titre */}
         <h3 
-          className="text-lg font-bold leading-snug mb-3 bg-gradient-to-r from-purple-700 to-purple-500 dark:from-purple-400 dark:to-purple-300 bg-clip-text text-transparent"
+    className="text-lg font-bold leading-snug mb-3 bg-linear-to-r from-purple-700 to-purple-500 dark:from-purple-400 dark:to-purple-300 bg-clip-text text-transparent"
           dangerouslySetInnerHTML={{ __html: item.title }} 
         />
         
         {/* Description */}
-        <p className="text-gray-600/80 dark:text-gray-400/80 text-sm leading-relaxed max-w-[240px]">
+        <p className="text-gray-600/80 dark:text-gray-400/80 text-sm leading-relaxed max-w-60">
           {item.description}
         </p>
       </div>
@@ -75,7 +75,7 @@ export default function ServiceCard({
         }
       `}>
         <div className={`
-          absolute inset-y-0 left-0 rounded-full bg-gradient-to-r from-purple-500 to-purple-400 transition-all duration-700 ease-out
+          absolute inset-y-0 left-0 rounded-full bg-linear-to-r from-purple-500 to-purple-400 transition-all duration-700 ease-out
           ${selected ? 'w-full' : 'w-0 group-hover:w-3/4'}
         `} />
       </div>

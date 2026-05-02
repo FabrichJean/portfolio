@@ -9,20 +9,20 @@ export default function Service() {
   const items: ServiceItem[] = [
     {
       id: 1,
-      title: `Transformation et projets<br/>digitaux.`,
-      description: "Nous nous occupons de votre transformation digitale ainsi que de votre projet digital complexe",
+      title: `Développement`,
+      description: `Sites web (React, Next.js, etc.)\nApplications web\nAPI / Backend`,
       Icon: DevicesIcon,
     },
     {
       id: 2,
-      title: `Création CRM, ERP,<br/>applications`,
-      description: "Nous créons votre CRM, votre ERP, vos programmes, applications…",
+      title: `Marketing`,
+      description: `Social media\nPublicité (Facebook Ads, Google Ads)\nSEO`,
       Icon: MonitorIcon,
     },
     {
       id: 3,
-      title: `Création et maintenance<br/>de sites.`,
-      description: "Mais si ce qu'il vous faut c'est juste de la création ou la maintenance de votre site, nous le faisons aussi !",
+      title: `Vidéo`,
+      description: `Montage vidéo\nMotion design\nContenu pour réseaux sociaux`,
       Icon: GlobeIcon,
     },
   ]
