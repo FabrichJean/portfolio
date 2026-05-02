@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-rose: #F5EDF0;
+  --color-lavender: #DCBDDF;
+  --color-iris: #9A99E1;
+  --color-cyan: #008BD0;
+}
